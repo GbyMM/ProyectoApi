@@ -6,7 +6,7 @@ const btnPrev        = document.querySelector('#prevPage'); /* Boton página ant
 const spanPagina     = document.querySelector('#paginaActual');/* Span que muestra la página actual */
 
 let currentPage   = 1; 
-const perPage     = 16;
+const perPage     = 20;
 let currentQuery  = 'a';
 
 
