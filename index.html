@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="proyecto.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 <body>
   <header>
+    <h1 class="titleHeader">Bookshop API <i class="fa-solid fa-book-open-reader"></i></h1>
     <form action="">
       <div class="containerBusqueda">
         <input type="text" id="campoBusqueda" value="" name="busqueda" placeholder="Buscar por titulo...">
@@ -21,17 +23,17 @@
 
   <main>
     <div class="card"></div> <!-- Donde van los libros -->
+
+  <div class="containerBoton">
     <div class="nav-botones">
-      <button class="anterior-btn"><i class="fa-solid fa-chevron-left"></i></button>
-      
-      <div class="indicadores">
-        <span class="circulo activo"></span>
-        <span class="circulo"></span>
-        <span class="circulo"></span>
-      </div>
-      
-      <button class="siguiente-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      <button id="prevPage" title="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <span id="paginaActual"> 1</span>
+      <button id="nextPage" title="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
+  </div>
+    
+    
+  
     
   </main>
 
